@@ -18,8 +18,10 @@ export default function ProductCard({venueName,imgSrc,onRateChange}:{venueName:s
             <div className='w-full h-[15%] p-[10px] text-emerald-60'>
                 {venueName}
             </div>
-            <Rating className='mx-[5px] h-[15%]' id={venueName + " Rating"} name={venueName + " Rating"} 
-            data-testid={venueName + " Rating"} value={ratingValue} onChange={(e, value)=>{setRatingValue(value || 0); e?.stopPropagation(); onRateChange(venueName, value || 0);}} ></Rating>
+            <div className='mx-[5px] h-[15%]' onClick={(e) => e.stopPropagation()}>
+                <Rating id={venueName + " Rating"} name={venueName + " Rating"} 
+                data-testid={venueName + " Rating"} value={ratingValue} onChange={(e, value)=>{setRatingValue(value || 0); e?.stopPropagation(); onRateChange(venueName, value || 0);}} ></Rating>
+            </div>
         </InteractiveCard> 
     );
 }

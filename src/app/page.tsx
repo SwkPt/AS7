@@ -9,7 +9,6 @@ export default function Home() {
     <div>
       <main className='w-full'>
         <Banner/>
-        <CardPanel/>
         </main>
       </div>
   );

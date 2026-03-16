@@ -41,4 +41,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 vercel link:
 
-https://as-7-drab.vercel.app/venue
+https://as-7-drab.vercel.app/
